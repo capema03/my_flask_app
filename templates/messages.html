@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesan</title>
+</head>
+<body>
+    <h1>Daftar Pesan</h1>
+    <ul>
+        {% for message in messages %}
+            <li>
+                <strong>{{ message.name }}</strong> ({{ message.email }}): {{ message.message }}
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
